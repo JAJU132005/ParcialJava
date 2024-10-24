@@ -1,4 +1,4 @@
-FROM tomcat:8.5.96-jdk11-openjdk-slim
+FROM tomcat:8.5.96-jdk21.0.4-onbuild
 
 WORKDIR /usr/local/tomcat/webapps
 COPY ./index.jsp /usr/local/tomcat/webapps/parcial2doCorte/
