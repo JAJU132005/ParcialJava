@@ -1,4 +1,4 @@
-FROM tomcat:8.5.96-jdk19
+FROM tomcat:8.5.96-jdk19.0.2
 
 # Instala JDK 19
 RUN apt-get update && \
