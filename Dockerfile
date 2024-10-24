@@ -1,14 +1,5 @@
 FROM tomcat:8.5.96-jdk19.0.2
 
-# Instala JDK 19
-RUN apt-get update && \
-    apt-get install -y openjdk-19-jdk && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
-# Establece la variable de entorno JAVA_HOME
-ENV JAVA_HOME /usr/lib/jvm/java-19-openjdk-amd64
-
 WORKDIR /usr/local/tomcat/webapps
 COPY ./WebContent /usr/local/tomcat/webapps/parcial2doCorte/
 COPY ./WebContent/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar /usr/local/tomcat/lib/
