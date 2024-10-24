@@ -1,4 +1,4 @@
-FROM tomcat:8.5.96-jdk9
+FROM tomcat:8.5.96
 
 WORKDIR /usr/local/tomcat/webapps
 COPY ./WebContent /usr/local/tomcat/webapps/parcial2doCorte/
