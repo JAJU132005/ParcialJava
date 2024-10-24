@@ -19,6 +19,10 @@
         <c:set var="dbUser" value="root" />
         <c:set var="dbPass" value="" />
 
+        <c:set var="dbURL" value="jdbc:mysql://sql10.freemysqlhosting.net/sql10740380" />
+        <c:set var="dbUser" value="sql10740380" />
+        <c:set var="dbPass" value="n8vKQHWRKN" />
+
         <sql:setDataSource var="ds" driver="com.mysql.jdbc.Driver" 
             url="${dbURL}" user="${dbUser}" password="${dbPass}" />
 
