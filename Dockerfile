@@ -1,5 +1,4 @@
-FROM tomcat:8.5.96
-FROM jdk:19.0.2
+FROM tomcat:9-jdk19
 
 WORKDIR /usr/local/tomcat/webapps
 COPY ./index.jsp /usr/local/tomcat/webapps/parcial2doCorte/
