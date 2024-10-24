@@ -1,7 +1,7 @@
 FROM tomcat:8.5.96
 
 WORKDIR /usr/local/tomcat/webapps
-COPY ./parcial2doCorte /usr/local/tomcat/webapps/parcial2doCorte/
+COPY  /usr/local/tomcat/webapps/parcial2doCorte/
 COPY ./WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar /usr/local/tomcat/lib/
 COPY ./WEB-INF/lib/mysql-connector-java-5.1.12-bin.jar /usr/local/tomcat/lib/
 
